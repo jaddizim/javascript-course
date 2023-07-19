@@ -4,12 +4,17 @@
 <head>
   <title>DOM Projects</title>
   <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     .subscribe-button {
       background: black;
       border: none;
       padding: 10px 15px;
       border-radius: 50px;
       cursor: pointer;
+      margin-bottom: 30px;
 
       color: white;
       font-weight: bold;
@@ -18,6 +23,21 @@
     .is-subscribed {
       background: rgb(240, 240, 240);
       color: black;
+    }
+
+    .cost-input {
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    .calculate-button {
+      background: green;
+      border: none;
+      padding: 12px 15px;
+      cursor: pointer;
+      
+      color:white;
+      font-size: 15px;
     }
   </style>
 </head>
@@ -31,11 +51,14 @@
 
   <p>Amazon Shipping Calculator</p>
 
-  <input placeholder="Cost of order" class="js-cost-input" onkeydown="handleCostKeydown(event)">
+  <input placeholder="Cost of order" class="js-cost-input cost-input" onkeydown="handleCostKeydown(event)">
 
-  <button onclick="calculateTotal()">Calculate</button>
+  <button onclick="calculateTotal()" class="calculate-button">Calculate</button>
 
   <p class="js-total-cost"></p>
+
+  <p>Rock Paper Scissors</p>
+  <a href="/10-rock-paper-scissors.html">Click here</a>
 
   <script>
 
